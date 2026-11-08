@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BlackBeard Bar · Omegna</title>
+<meta name="description" content="BlackBeard Bar, il bar pirata di Omegna. Cocktail speciali, birre premium, vino italiano, caffè e cibo. Via Felice Cavallotti 18.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rokkitt:wght@600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brand.css">
+<style>
+:root{--bg:#0E0A08;--bg2:#17110C;--ink:#F6EBD7;--mut:#B9A98C;--sans:"Outfit",system-ui,sans-serif}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img.ph{width:100%;height:100%;object-fit:cover}
+h2{font:400 clamp(30px,9vw,44px)/1.04 var(--slab);letter-spacing:.005em}
+.eyebrow{font:700 14px/1 var(--slab2);letter-spacing:.22em;text-transform:uppercase;color:var(--oro);margin-bottom:14px}
+.wrap{padding:0 22px;max-width:640px;margin:0 auto}
+.top{display:flex;justify-content:center;padding:22px 16px 10px}
+.top .wm{--wm:var(--ink);--wm-size:24px}
+.hero{position:relative;height:455px;margin-top:6px}
+.arch{position:absolute;right:0;top:0;width:84%;height:100%;border-radius:999px 0 0 0;overflow:hidden;box-shadow:0 0 0 2px var(--oro) inset}
+.arch img{object-position:46% 50%}
+.arch:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(14,10,8,.7))}
+.hero .seal{position:absolute;left:12px;top:46px;--seal-size:104px;--seal-rot:-14deg;z-index:3}
+.outline{position:absolute;left:14px;bottom:-26px;z-index:2;font:400 clamp(50px,15.4vw,100px)/.92 var(--slab);color:transparent;-webkit-text-stroke:1.6px var(--oro);pointer-events:none}
+.outline span{display:block}
+.outline span:nth-child(2){margin-left:.35em}.outline span:nth-child(3){margin-left:.7em}.outline span:nth-child(4){margin-left:.2em}
+.lead{padding:52px 22px 0;max-width:560px;margin:0 auto}
+.lead p.big{font:700 clamp(24px,6.6vw,32px)/1.2 var(--slab2);color:var(--ink)}
+.lead p.big em{font-style:normal;color:var(--oro)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn.p{background:var(--perg);border-color:var(--perg);color:#0E0A08;border-radius:999px}
+.btn.o{border-radius:999px;color:var(--ink)}
+.btn.r{background:var(--rosso);border-color:var(--rosso);color:var(--crema);border-radius:999px}
+.lnk{color:var(--oro);font:600 16px/1.2 var(--sans);display:inline-block;margin-top:16px}
+.who{display:grid;gap:26px;padding:84px 22px 0;max-width:640px;margin:0 auto}
+.emb{width:min(72%,290px);margin:0 auto;border-radius:999px 999px 0 0;overflow:hidden;border:2px solid var(--oro);padding:6px;background:var(--bg2)}
+.emb img{border-radius:999px 999px 0 0;width:100%;height:auto}
+.who p{color:var(--mut)}
+.who p b{color:var(--ink);font-weight:400}
+blockquote{border-left:2px solid var(--oro);padding:2px 0 2px 16px;font:italic 300 19px/1.45 var(--sans);color:var(--ink)}
+blockquote cite{display:block;font:600 13px/1 var(--sans);font-style:normal;color:var(--mut);margin-top:10px;letter-spacing:.04em}
+.sec{padding:96px 0 0}
+.sec .wrap>h2{margin-bottom:8px}
+.sec .wrap>p{color:var(--mut)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:34px 14px 0;max-width:640px;margin:0 auto}
+.tile{position:relative;aspect-ratio:3/4.4;overflow:hidden;text-decoration:none;display:block}
+.tile.up{border-radius:999px 999px 0 0}.tile.dn{border-radius:0 0 999px 999px}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,10,8,.78),transparent 58%)}
+.tile.dn:after{background:linear-gradient(180deg,rgba(14,10,8,.78),transparent 58%)}
+.tile span{position:absolute;z-index:2;left:6px;right:6px;text-align:center;font:400 21px/1.05 var(--slab)}
+.tile.up span{bottom:44px}.tile.dn span{top:44px}
+.tile small{display:block;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--oro);margin-top:8px}
+.more{padding:28px 22px 0;max-width:640px;margin:0 auto;color:var(--mut)}
+.more b{color:var(--ink);font-weight:400}
+.night{margin-top:104px}
+.night .paper{--ink:#0E0A08;background:var(--perg);color:var(--ink);padding:34px 22px 46px}
+.night .paper h2{color:var(--ink)}
+.night .paper p{margin-top:16px;max-width:34em}
+.night .paper .eyebrow{color:var(--rosso);margin-bottom:14px;margin-top:0}
+.night .paper .btn{margin-top:24px;border-radius:999px;color:var(--ink)}
+.night .wrap2{background:var(--perg);padding:0 22px}
+.night .shot{border-radius:0 0 999px 999px;overflow:hidden;height:300px;position:relative}
+.night .shot img{object-position:40% 36%}
+.band{position:relative;margin-top:96px;height:420px;overflow:hidden}
+.band img{position:absolute;inset:0;object-position:30% 50%}
+.band:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg),transparent 28%,transparent 62%,var(--bg));z-index:1}
+.band p{position:absolute;z-index:2;left:22px;right:22px;bottom:46px;font:400 clamp(40px,13vw,72px)/.95 var(--slab);color:transparent;-webkit-text-stroke:1.4px var(--ink)}
+.strip{display:flex;gap:10px;overflow-x:auto;padding:34px 14px 0;scroll-snap-type:x mandatory;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip figure{flex:0 0 68%;aspect-ratio:4/5;scroll-snap-align:center;overflow:hidden}
+.strip figure:nth-child(odd){border-radius:999px 999px 0 0}
+.strip figure:nth-child(even){border-radius:0 0 999px 999px}
+.strip img{object-position:50% 40%}
+.where{margin-top:104px;background:var(--bg2);padding:56px 22px 40px;border-radius:999px 999px 0 0;text-align:center}
+.where .in{max-width:420px;margin:0 auto}
+.where h2{margin-bottom:12px}
+.where address{font-style:normal;color:var(--mut);margin-bottom:6px}
+.where address b{color:var(--ink);font-weight:400;display:block;font-size:19px}
+.where .cta{justify-content:center}
+.where .rotta{margin:32px auto 22px;color:var(--oro);max-width:300px}
+.where .soc{display:flex;justify-content:center;gap:22px}
+.where .soc a{color:var(--oro);font:600 16px/1 var(--sans)}
+.foot{background:var(--bg2);padding:10px 22px 42px;text-align:center;color:var(--mut);font-size:13px}
+.foot p{max-width:34em;margin:0 auto}
+@media(min-width:760px){.hero{height:680px}.arch{width:64%}.strip figure{flex-basis:28%}.tiles{grid-template-columns:repeat(4,1fr)}}
+</style></head><body>
+
+<header class="top"><a class="wm" href="#" aria-label="BlackBeard Bar, Omegna"><b>BlackBeard Bar</b><i>Omegna</i></a></header>
+
+<section class="hero" aria-label="Apertura">
+  <div class="arch"><img class="ph" src="img/bancone.jpg" alt="Un pirata di spalle al bancone, una candela accesa e il retrobanco pieno di bottiglie"></div>
+  <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Omegna, Via Cavallotti 18"><defs><path id="sp" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs><circle cx="100" cy="100" r="96" fill="#A32A1C"/><circle cx="100" cy="100" r="87" fill="none" stroke="#EBD9A8" stroke-width="2" stroke-dasharray="3 5"/><text font-family="Alfa Slab One,Georgia,serif" font-size="12.5" letter-spacing="1.6" fill="#EBD9A8"><textPath href="#sp">BLACKBEARD BAR · OMEGNA · VIA CAVALLOTTI 18 ·</textPath></text><path d="M72 72L128 128M128 72L72 128" stroke="#EBD9A8" stroke-width="15" stroke-linecap="square"/></svg>
+  <h1 class="outline" aria-label="Cocktail, birra, vino, caffè"><span>Cocktail.</span><span>Birra.</span><span>Vino.</span><span>Caffè.</span></h1>
+</section>
+
+<section class="lead">
+  <p class="big">Il bar pirata di Omegna. <em>Si entra, si prende posto al bancone, si salpa.</em></p>
+  <div class="cta">
+    <a class="btn p" href="tel:+393515241897">Chiama il bar</a>
+    <a class="btn o" href="https://wa.me/393515241897" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <a class="lnk" href="https://www.google.com/maps/search/?api=1&query=BlackBeard+Bar+Via+Cavallotti+18+Omegna" target="_blank" rel="noopener">Via Cavallotti 18, apri in Maps →</a>
+</section>
+
+<section class="who" aria-label="Il bar">
+  <div class="emb"><img src="img/emblema.jpg" alt="Emblema di BlackBeard: un pirata barbuto con il tricorno" width="531" height="640"></div>
+  <div>
+    <p class="eyebrow">Il bar</p>
+    <blockquote>Il bar piratesco per eccellenza.</blockquote>
+    <p style="margin-top:22px">Un locale con un pirata sul logo e una ciurma di clienti al bancone. Qui si trovano <b>cocktail speciali, birre premium, vino italiano</b>, il caffè e qualcosa da mangiare.</p>
+  </div>
+</section>
+
+<section class="sec" aria-label="Cosa trovi a bordo">
+  <div class="wrap"><p class="eyebrow">A bordo</p><h2>Cosa si beve e cosa si mangia</h2><p>Quattro cose da sapere prima di entrare.</p></div>
+  <div class="tiles">
+    <a class="tile up" href="https://www.instagram.com/black_beard_omegna" target="_blank" rel="noopener"><img class="ph" src="img/pompelmo.jpg" alt="Cocktail con una fetta di pompelmo rosa" loading="lazy"><span>Cocktail<small>speciali</small></span></a>
+    <a class="tile dn" href="#dove"><img class="ph" src="img/gen/scaffali.jpg" alt="Scaffali di bottiglie con luce di candela (immagine illustrativa)" loading="lazy" style="object-position:55% 50%"><span>Birre e vino<small>premium e italiano</small></span></a>
+    <a class="tile dn" href="https://www.instagram.com/black_beard_omegna" target="_blank" rel="noopener"><img class="ph" src="img/layer.jpg" alt="Drink a strati rosso e chiaro su fondo nero" loading="lazy"><span>Foto e novità<small>su Instagram</small></span></a>
+    <a class="tile up" href="#serate"><img class="ph" src="img/serata.jpg" alt="Due persone in costume da pirata a una festa" loading="lazy" style="object-position:62% 40%"><span>Serate<small>in costume</small></span></a>
+  </div>
+  <p class="more"><b>E poi il caffè</b>, e qualcosa da mangiare per accompagnare il drink.</p>
+</section>
+
+<section class="night" id="serate">
+  <div class="tear" style="--tc:var(--perg)"></div>
+  <div class="paper">
+    <p class="eyebrow">Le serate</p>
+    <h2>Chi viene in costume<br>non passa inosservato.</h2>
+    <p>Il locale organizza serate a tema, con la ciurma vestita per l'occasione. Tra i post del profilo c'è anche «Harrowen Pirates Return». Date e programma li annunciano su Instagram: conviene seguirli.</p>
+    <a class="btn" href="https://www.instagram.com/black_beard_omegna" target="_blank" rel="noopener">Guarda il profilo</a>
+  </div>
+  <div class="wrap2"><div class="shot"><img class="ph" src="img/serata.jpg" alt="Due persone in costume da pirata a una festa in piazza" loading="lazy"></div></div>
+</section>
+
+<section class="band" aria-label="Atmosfera">
+  <img class="ph" src="img/gen/candela.jpg" alt="Una candela accesa su un bancone di legno scuro (immagine illustrativa)" loading="lazy">
+  <p>Rotta: Via Cavallotti.</p>
+</section>
+
+<section class="sec" style="padding-top:60px" aria-label="Galleria">
+  <div class="wrap"><p class="eyebrow">Dal profilo</p><h2>Qualche foto di bordo</h2></div>
+  <div class="strip">
+    <figure><img class="ph" src="img/lamponi.jpg" alt="Coppa con un cocktail rosso, schiuma e due lamponi" loading="lazy"></figure>
+    <figure><img class="ph" src="img/versare.jpg" alt="Un barman versa una bibita in un bicchiere di plastica" loading="lazy"></figure>
+    <figure><img class="ph" src="img/layer.jpg" alt="Drink a strati rosso e chiaro" loading="lazy"></figure>
+    <figure><img class="ph" src="img/pompelmo.jpg" alt="Cocktail con una fetta di pompelmo rosa" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="where" id="dove" aria-label="Dove siamo">
+  <div class="in">
+    <p class="eyebrow">Dove si salpa</p>
+    <h2>Via Felice Cavallotti 18, Omegna</h2>
+    <address><b>28887 Omegna (VB)</b>+39 351 524 1897</address>
+    <div class="cta" style="margin-top:24px">
+      <a class="btn r" href="tel:+393515241897">Chiama il bar</a>
+      <a class="btn o" href="https://wa.me/393515241897" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn o" href="https://www.google.com/maps/search/?api=1&query=BlackBeard+Bar+Via+Cavallotti+18+Omegna" target="_blank" rel="noopener">Come arrivare</a>
+    </div>
+    <div class="rotta" aria-hidden="true"></div>
+    <div class="soc"><a href="https://www.instagram.com/black_beard_omegna" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/BlackBeardOmegna" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+</section>
+<footer class="foot"><p>Anteprima Lumen. Le foto vere vengono dal profilo Instagram del locale; le immagini d'atmosfera sono illustrative. Orari e contatti da confermare.</p></footer>
+</body></html>

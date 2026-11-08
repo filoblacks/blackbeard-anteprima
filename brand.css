@@ -1,0 +1,29 @@
+/* BlackBeard Bar, base di marca comune alle 4 anteprime Lumen */
+:root{
+  --ink:#0E0A08;--oro:#E2B862;--perg:#EBD9A8;--perg2:#DCC795;--crema:#F6EBD7;
+  --rosso:#A32A1C;--ambra:#E08A2B;
+  --slab:"Alfa Slab One","Rokkitt",Georgia,serif;
+  --slab2:"Rokkitt",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ambra);outline-offset:3px}
+/* wordmark: slab pesante, "Omegna" sotto, come sul loro sito */
+.wm{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--wm,var(--ink));line-height:1}
+.wm b{font:400 var(--wm-size,22px)/1 var(--slab);letter-spacing:.015em;text-transform:uppercase;white-space:nowrap}
+.wm i{font:700 calc(var(--wm-size,22px)*.6)/1 var(--slab2);font-style:normal;margin-top:.28em;letter-spacing:.02em}
+/* la rotta: filetto tratteggiato che finisce in una X */
+.rotta{display:flex;align-items:center;gap:10px;color:var(--rt,currentColor)}
+.rotta:before{content:"";flex:1;border-top:2px dashed currentColor;opacity:.55}
+.rotta:after{content:"";width:14px;height:14px;flex:none;
+  background:linear-gradient(45deg,transparent 43%,currentColor 43% 57%,transparent 57%),linear-gradient(-45deg,transparent 43%,currentColor 43% 57%,transparent 57%)}
+/* bordo strappato: elemento colorato con margine superiore irregolare */
+.tear{height:14px;background:var(--tc,var(--perg));-webkit-mask:url(img/tear.svg) repeat-x 0 100%/600px 14px;mask:url(img/tear.svg) repeat-x 0 100%/600px 14px;margin-bottom:-1px}
+.tear.flip{transform:scaleY(-1);margin:-1px 0 0}
+/* sigillo */
+.seal{width:var(--seal-size,112px);height:auto;transform:rotate(var(--seal-rot,-12deg));filter:drop-shadow(0 3px 6px rgba(0,0,0,.35))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 22px;text-decoration:none;font:700 18px/1 var(--slab2);letter-spacing:.04em;text-transform:uppercase;border:2px solid currentColor;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
